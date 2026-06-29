@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+  --font-serif: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html, body, button, input, select, textarea, table, th, td {
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}
+
+/* Artistic Flair Helper Styles */
+.bg-textile-gradient {
+  background: linear-gradient(to right, #1e3a8a, #fbbf24, #1e3a8a);
+}
+
+.bg-fabric-pattern {
+  background-image: radial-gradient(circle at 2px 2px, #d4af37 1.5px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.font-display-serif {
+  font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}

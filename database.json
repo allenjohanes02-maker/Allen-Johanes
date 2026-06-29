@@ -1,0 +1,547 @@
+{
+  "users": [
+    {
+      "id": "u_buyer",
+      "name": "Fatuma Omari",
+      "email": "fatuma@example.tz",
+      "role": "buyer",
+      "phone": "+255 712 111 222",
+      "avatar": "👩🏾‍💼"
+    },
+    {
+      "id": "u_seller_kamala",
+      "name": "Kamala Vitenge Store",
+      "email": "kamala@example.tz",
+      "role": "seller",
+      "phone": "+255 655 400 300",
+      "avatar": "🏬",
+      "verifiedSeller": true
+    },
+    {
+      "id": "u_seller_mangi",
+      "name": "Mangi Fabrics East Africa",
+      "email": "mangi@example.tz",
+      "role": "seller",
+      "phone": "+255 784 999 888",
+      "avatar": "🏢",
+      "verifiedSeller": true
+    },
+    {
+      "id": "u_admin",
+      "name": "Allen Dreamer77",
+      "email": "allenben428@gmail.com",
+      "role": "admin",
+      "phone": "+255 714 202 298",
+      "avatar": "👑"
+    }
+  ],
+  "sellers": [
+    {
+      "id": "s_kamala",
+      "userId": "u_seller_kamala",
+      "storeName": "Kamala Vitenge Emporium",
+      "description": "Wauzaji mashuhuri wa Vitenge vya asili vya nta (Wax prints), vilivyopambwa kwa dhahabu na pamba bora kutoka Morogoro na Mwanza.",
+      "verified": true,
+      "rating": 4.9,
+      "salesCount": 142,
+      "revenue": 4260000,
+      "phone": "+255 655 400 300",
+      "whatsapp": "255655400300",
+      "location": "Kariakoo, Dar es Salaam"
+    },
+    {
+      "id": "s_mangi",
+      "userId": "u_seller_mangi",
+      "storeName": "Mangi Fabrics East Africa",
+      "description": "Tunajihusisha na kuuza Vitenge vya Harusi, sherehe za kifahari na mitindo ya kisasa ya kiume na kike kutoka kote Afrika Mashariki.",
+      "verified": true,
+      "rating": 4.7,
+      "salesCount": 98,
+      "revenue": 3180000,
+      "phone": "+255 784 999 888",
+      "whatsapp": "255784999888",
+      "location": "Mwanza City Mall, Mwanza"
+    }
+  ],
+  "products": [
+    {
+      "id": "p_1",
+      "title": "Khanga na Kitenge cha Nta ya Kwanza (Super Wax)",
+      "titleSw": "Kitenge cha Nta ya Kwanza (Super Wax)",
+      "description": "100% premium cotton wax print with a vibrant floral layout outlined in luxury gold foil. Highly durable fabric suited for wedding gowns, executive wear, and special cultural occasions.",
+      "descriptionSw": "Kitenge cha nta daraja la kwanza (Super Wax) kilichoundwa kwa pamba 100%. Kina michoro maridadi ya maua iliyozungushiwa nakshi ya dhahabu. Haichubuki na kinafaa kwa nguo za harusi, sherehe, au mavazi rasmi.",
+      "price": 20000,
+      "category": "Premium Vitenge",
+      "sellerId": "s_kamala",
+      "sellerName": "Kamala Vitenge Emporium",
+      "images": [
+        "/src/assets/images/kitenge_green_orange_1782736323136.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_1_1",
+          "name": "6 Yards",
+          "priceModifier": 0,
+          "stock": 24
+        },
+        {
+          "id": "v_1_2",
+          "name": "12 Yards",
+          "priceModifier": 10000,
+          "stock": 12
+        }
+      ],
+      "stock": 36,
+      "tags": [
+        "Wax Print",
+        "Gold Foil",
+        "Wedding",
+        "Premium",
+        "Morogoro"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 12,
+      "featured": true,
+      "trending": true,
+      "newArrival": false,
+      "bestSeller": true
+    },
+    {
+      "id": "p_2",
+      "title": "Traditional Swahili Kanga Pattern",
+      "titleSw": "Kitenge cha Asili cha Kanga na Methali",
+      "description": "Classic Tanzanian Vitenge pattern with authentic geometric design. Includes elegant borders and central floral focus. Perfectly breathable material for daily use.",
+      "descriptionSw": "Kitenge cha asili chenye michoro ya kijiometri na mipasuko ya kitamaduni. Rangi madhubuti za bluu na dhahabu. Kitambaa chepesi kinachopumua vizuri, kinafaa kwa matumizi ya kila siku.",
+      "price": 25000,
+      "category": "Traditional Vitenge",
+      "sellerId": "s_kamala",
+      "sellerName": "Kamala Vitenge Emporium",
+      "images": [
+        "/src/assets/images/kitenge_blue_gold_1782736308148.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_2_1",
+          "name": "6 Yards",
+          "priceModifier": 0,
+          "stock": 40
+        }
+      ],
+      "stock": 40,
+      "tags": [
+        "Traditional",
+        "Daily",
+        "Kariakoo",
+        "Blue-Gold"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 8,
+      "featured": false,
+      "trending": true,
+      "newArrival": true,
+      "bestSeller": false
+    },
+    {
+      "id": "p_3",
+      "title": "Modern Designer Geometrics (Fashion Edition)",
+      "titleSw": "Kitenge cha Mitindo cha Kisasa (Geometric)",
+      "description": "An elegant contemporary take on Vitenge featuring asymmetrical gold lines on royal blue blocks. Recommended for bespoke modern dresses, blazers, and luxury accessories.",
+      "descriptionSw": "Mtindo wa kisasa kabisa wa Vitenge ukiwa na mistari ya dhahabu ya kijiometri kwenye bluu ya kifalme. Kinafaa kwa suti, magauni ya kisasa ya kike na kiume, na mikoba ya kiasili.",
+      "price": 24000,
+      "category": "Fashion Vitenge",
+      "sellerId": "s_mangi",
+      "sellerName": "Mangi Fabrics East Africa",
+      "images": [
+        "/src/assets/images/kitenge_yellow_blue_1782736276162.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_3_1",
+          "name": "6 Yards",
+          "priceModifier": 0,
+          "stock": 15
+        },
+        {
+          "id": "v_3_2",
+          "name": "6 Yards Extra Soft",
+          "priceModifier": 4000,
+          "stock": 8
+        }
+      ],
+      "stock": 23,
+      "tags": [
+        "Modern",
+        "Asymmetric",
+        "Fashion",
+        "Designer"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 15,
+      "featured": true,
+      "trending": false,
+      "newArrival": true,
+      "bestSeller": true
+    },
+    {
+      "id": "p_4",
+      "title": "Royal Tanzanian Wedding Brocade Kitenge",
+      "titleSw": "Kitenge cha Harusi ya Kifalme (Brocade)",
+      "description": "Heavy woven jacquard and wax combination, designed strictly for high-end wedding parties, brides, and send-off ceremonies. Features intricate gold threads.",
+      "descriptionSw": "Kitenge cha kifahari kilichofumwa kwa uzi mzito wa dhahabu na pamba ngumu ya sherehe (Jacquard/Brocade). Kinafaa kwa maharusi, sherehe za Send-Off, na hafla rasmi za kitaifa.",
+      "price": 30000,
+      "category": "Wedding Vitenge",
+      "sellerId": "s_mangi",
+      "sellerName": "Mangi Fabrics East Africa",
+      "images": [
+        "/src/assets/images/kitenge_red_black_1782736294642.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_4_1",
+          "name": "6 Yards Deluxe",
+          "priceModifier": 0,
+          "stock": 10
+        }
+      ],
+      "stock": 10,
+      "tags": [
+        "Wedding",
+        "Brocade",
+        "Luxury",
+        "Royal",
+        "Gold Thread"
+      ],
+      "rating": 5,
+      "reviewsCount": 6,
+      "featured": true,
+      "trending": true,
+      "newArrival": true,
+      "bestSeller": false
+    },
+    {
+      "id": "p_5",
+      "title": "Imported Java High-Glaze Wax Print",
+      "titleSw": "Kitenge cha Java Kina'acho (High-Glaze Wax)",
+      "description": "Imported fine Java wax print with a high-glaze silky finish. Outstanding colors of navy blue, gold dust, and cream white. Known for soft feel and premium drape.",
+      "descriptionSw": "Kitenge cha nta cha Java kilichoingizwa nchini chenye tabaka la juu linalong'aa (silky gloss). Rangi za kuvutia za bluu nzito na vumbi la dhahabu. Laini na rahisi kushoneka.",
+      "price": 29000,
+      "category": "Imported Vitenge",
+      "sellerId": "s_kamala",
+      "sellerName": "Kamala Vitenge Emporium",
+      "images": [
+        "/src/assets/images/kitenge_yellow_blue_1782736276162.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_5_1",
+          "name": "6 Yards Java",
+          "priceModifier": 0,
+          "stock": 18
+        }
+      ],
+      "stock": 18,
+      "tags": [
+        "Java Wax",
+        "High-Glaze",
+        "Imported",
+        "Soft-Drape"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 9,
+      "featured": false,
+      "trending": false,
+      "newArrival": false,
+      "bestSeller": true
+    },
+    {
+      "id": "p_6",
+      "title": "Local Hand-Dyed Batik Kitenge",
+      "titleSw": "Kitenge cha Batik ya Kupaka kwa Mkono",
+      "description": "Ethically created hand-dyed Batik Vitenge made by local women cooperatives in Morogoro. Distinctive unique organic shapes in dark blue and mustard gold.",
+      "descriptionSw": "Batik iliyopakwa rangi kwa mkono na kikundi cha wakinamama wajasiriamali mkoani Morogoro. Michoro ya asili isiyoiga popote. Ununuzi huu unasaidia maisha ya jamii za wenyeji.",
+      "price": 22000,
+      "category": "Local Designs",
+      "sellerId": "s_mangi",
+      "sellerName": "Mangi Fabrics East Africa",
+      "images": [
+        "/src/assets/images/kitenge_green_orange_1782736323136.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_6_1",
+          "name": "6 Yards Batik",
+          "priceModifier": 0,
+          "stock": 15
+        }
+      ],
+      "stock": 15,
+      "tags": [
+        "Batik",
+        "Handmade",
+        "Local",
+        "Women-Coop",
+        "Morogoro"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 19,
+      "featured": false,
+      "trending": true,
+      "newArrival": true,
+      "bestSeller": false
+    },
+    {
+      "id": "p_7",
+      "title": "Duanas Authentic Butterfly Print (Super Wax)",
+      "titleSw": "Kitenge cha Duanas cha Maua ya Kipepeo",
+      "description": "Guaranteed block prints Super Wax fabric branded by DUANAS, printed by Orientar. Features beautiful navy blue block patterns with elegant golden butterfly prints.",
+      "descriptionSw": "Kitenge cha nta daraja la kwanza chapa ya DUANAS, kilichochapishwa na Orientar. Kina michoro ya asili ya vipepeo vya dhahabu kwenye mandhari ya bluu ya kifalme and kahawia.",
+      "price": 26000,
+      "category": "Premium Vitenge",
+      "sellerId": "s_kamala",
+      "sellerName": "Kamala Vitenge Emporium",
+      "images": [
+        "/src/assets/images/kitenge_red_black_1782736294642.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_7_1",
+          "name": "6 Yards Super Wax",
+          "priceModifier": 0,
+          "stock": 20
+        },
+        {
+          "id": "v_7_2",
+          "name": "12 Yards Super Wax",
+          "priceModifier": 4000,
+          "stock": 10
+        }
+      ],
+      "stock": 30,
+      "tags": [
+        "Duanas",
+        "Butterfly",
+        "Super Wax",
+        "Orientar",
+        "Kariakoo"
+      ],
+      "rating": 5.0,
+      "reviewsCount": 7,
+      "featured": true,
+      "trending": true,
+      "newArrival": true,
+      "bestSeller": true
+    },
+    {
+      "id": "p_8",
+      "title": "Duanas Basketweave Geometric Plaid Print",
+      "titleSw": "Kitenge cha Duanas cha Mistari ya Kikapu",
+      "description": "Guaranteed block prints Super Wax fabric branded by DUANAS. Intricate interlocking basketweave design with brilliant cyan blue, warm yellow, and brown plaid blocks.",
+      "descriptionSw": "Kitenge cha asili cha DUANAS chenye michoro ya kijiometri ya kusukwa kama kikapu (Basketweave). Rangi nzuri za bluu ya bahari, njano, na kahawia kwa sherehe na mtindo wa kila siku.",
+      "price": 24000,
+      "category": "Traditional Vitenge",
+      "sellerId": "s_kamala",
+      "sellerName": "Kamala Vitenge Emporium",
+      "images": [
+        "/src/assets/images/kitenge_blue_gold_1782736308148.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_8_1",
+          "name": "6 Yards",
+          "priceModifier": 0,
+          "stock": 15
+        }
+      ],
+      "stock": 15,
+      "tags": [
+        "Duanas",
+        "Basketweave",
+        "Plaid",
+        "Geometric",
+        "Orientar"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 5,
+      "featured": true,
+      "trending": false,
+      "newArrival": true,
+      "bestSeller": false
+    },
+    {
+      "id": "p_9",
+      "title": "Duanas Royal Navy Red Fan Blossom",
+      "titleSw": "Kitenge cha Duanas cha Maua ya Kipepeo Mwekundu",
+      "description": "Authentic DUANAS printed by Orientar featuring elegant red fan blossoms layered on flowing navy wave lines. A masterpiece of traditional African pattern design.",
+      "descriptionSw": "Kitenge cha kifahari cha DUANAS kilichochapishwa na Orientar kikiwa na maua mekundu ya kipepeo/fani yanayochanua kwenye mawimbi meusi na meupe. Bora kwa sherehe na Send-off.",
+      "price": 28000,
+      "category": "Wedding Vitenge",
+      "sellerId": "s_mangi",
+      "sellerName": "Mangi Fabrics East Africa",
+      "images": [
+        "/src/assets/images/kitenge_red_black_1782736294642.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_9_1",
+          "name": "6 Yards Deluxe",
+          "priceModifier": 0,
+          "stock": 12
+        }
+      ],
+      "stock": 12,
+      "tags": [
+        "Duanas",
+        "Wedding",
+        "Blossom",
+        "Navy-Red",
+        "Orientar"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 8,
+      "featured": false,
+      "trending": true,
+      "newArrival": true,
+      "bestSeller": true
+    },
+    {
+      "id": "p_10",
+      "title": "Duanas Modernist Chevron Triangle Print",
+      "titleSw": "Kitenge cha Duanas cha Pembe Tatu na Mistari",
+      "description": "Contemporary tribal chevron and triangular stripe pattern branded by DUANAS. Rich red, yellow, and black details that create a spectacular visual contrast.",
+      "descriptionSw": "Mtindo wa kisasa wa DUANAS wenye michoro ya pembetatu (Chevron) na mistari ya kitamaduni. Inachanganya rangi za njano, nyekundu, na nyeusi kwa ujasiri na mtindo usio na kifani.",
+      "price": 23000,
+      "category": "Fashion Vitenge",
+      "sellerId": "s_mangi",
+      "sellerName": "Mangi Fabrics East Africa",
+      "images": [
+        "/src/assets/images/kitenge_yellow_blue_1782736276162.jpg"
+      ],
+      "variations": [
+        {
+          "id": "v_10_1",
+          "name": "6 Yards Standard",
+          "priceModifier": 0,
+          "stock": 22
+        }
+      ],
+      "stock": 22,
+      "tags": [
+        "Duanas",
+        "Chevron",
+        "Triangle",
+        "Fashion",
+        "Orientar"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 4,
+      "featured": true,
+      "trending": true,
+      "newArrival": true,
+      "bestSeller": false
+    }
+  ],
+  "orders": [],
+  "reviews": [
+    {
+      "id": "r_1",
+      "productId": "p_1",
+      "userId": "u_buyer",
+      "userName": "Fatuma Omari",
+      "rating": 5,
+      "comment": "The gold foil is stunning and does not wash out at all! Best wedding buy.",
+      "commentSw": "Nakshi ya dhahabu ni nzuri mno na haitoki kabisa wakati wa kufua! Ndiyo ununuzi wangu bora wa harusi.",
+      "createdAt": "2026-06-25T14:32:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m_1",
+      "senderId": "u_buyer",
+      "receiverId": "s_kamala",
+      "senderName": "Fatuma Omari",
+      "content": "Habari Kamala, ninataka kujua kama Super Wax itafaa kwa gauni la harusi?",
+      "timestamp": "2026-06-28T09:00:00Z"
+    },
+    {
+      "id": "m_2",
+      "senderId": "s_kamala",
+      "receiverId": "u_buyer",
+      "senderName": "Kamala Vitenge Emporium",
+      "content": "Habari Fatuma! Ndio, inafaa kabisa. Ina mng'ao wa dhahabu ambao ni bora kwa gauni la bibi harusi.",
+      "timestamp": "2026-06-28T09:15:00Z"
+    },
+    {
+      "id": "m_1782736367782",
+      "senderId": "u_buyer",
+      "receiverId": "s_kamala",
+      "senderName": "Fatuma Omari",
+      "content": "vp",
+      "timestamp": "2026-06-29T12:32:47.782Z"
+    },
+    {
+      "id": "m_1782736370675",
+      "senderId": "u_buyer",
+      "receiverId": "u_buyer",
+      "senderName": "Fatuma Omari",
+      "content": "Asante kwa ujumbe wako! Kamala Vitenge store imepokea. Tutajibu mara moja.",
+      "timestamp": "2026-06-29T12:32:50.675Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n_1",
+      "userId": "u_buyer",
+      "title": "Karibu Sokoni!",
+      "titleSw": "Karibu Sokoni!",
+      "message": "Explore authentic Tanzanian Vitenge with local secure delivery.",
+      "messageSw": "Gundua Vitenge halisi vya Kitanzania vikiwa na usafirishaji wa uhakika nchini.",
+      "type": "marketing",
+      "read": false,
+      "createdAt": "2026-06-29T00:00:00Z"
+    }
+  ],
+  "payments": [],
+  "securityLogs": [
+    {
+      "id": "sl_1",
+      "event": "Admin Login Successful",
+      "severity": "info",
+      "ipAddress": "192.168.1.50",
+      "userId": "u_admin",
+      "timestamp": "2026-06-29T04:00:00-07:00",
+      "details": "Admin session initiated for Allen Dreamer77"
+    },
+    {
+      "id": "sl_2",
+      "event": "CSRF Token Validation Active",
+      "severity": "info",
+      "ipAddress": "system",
+      "timestamp": "2026-06-29T04:05:00-07:00",
+      "details": "Enterprise-grade cookie validation is actively monitoring sessions"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "al_1",
+      "userId": "u_admin",
+      "userName": "Allen Dreamer77",
+      "action": "System Audit",
+      "timestamp": "2026-06-29T04:10:00-07:00",
+      "details": "Approved store verification request for Kamala Vitenge Emporium"
+    }
+  ],
+  "coupons": [
+    {
+      "code": "VITENGE10",
+      "discountPercent": 10,
+      "description": "Get 10% off your entire authentic Vitenge purchase!",
+      "descriptionSw": "Pata punguzo la 10% kwenye ununuzi wote wa Vitenge!"
+    },
+    {
+      "code": "MANGISHEKHE",
+      "discountPercent": 15,
+      "description": "15% off Wedding and Royal designs by Mangi Fabrics.",
+      "descriptionSw": "Punguzo la 15% kwenye nguo za sherehe kutoka Mangi Fabrics."
+    }
+  ]
+}

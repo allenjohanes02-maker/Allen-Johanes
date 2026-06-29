@@ -1,0 +1,6 @@
+{
+  "name": "Soko la Vitenge Mtandaoni",
+  "description": "Bilingual (Kiswahili/English) AI-powered multi-vendor marketplace for Vitenge fabrics, featuring local offline order persistence, multi-agent AI assistants, and interactive seller/buyer interfaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
